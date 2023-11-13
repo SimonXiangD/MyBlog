@@ -5,15 +5,15 @@
 # Site
 title: Blog
 subtitle: "个人博客实验"
-description: "随便写点"
+description: "改变自己！"
 keywords:
 author: Dirnot
-language: en
+language: zh
 timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://simonxiangd.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
