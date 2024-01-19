@@ -6,8 +6,11 @@ settings:
 
 dependencies:
   hexo:
-    specifier: ^7.0.0
-    version: 7.0.0
+    specifier: ^7.1.0
+    version: 7.1.0
+  hexo-deployer-git:
+    specifier: ^4.0.0
+    version: 4.0.0
   hexo-generator-archive:
     specifier: ^2.0.0
     version: 2.0.0
@@ -17,6 +20,9 @@ dependencies:
   hexo-generator-index:
     specifier: ^3.0.0
     version: 3.0.0
+  hexo-generator-search:
+    specifier: ^2.4.3
+    version: 2.4.3
   hexo-generator-tag:
     specifier: ^2.0.0
     version: 2.0.0
@@ -628,6 +634,7 @@ packages:
   /fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
     requiresBuild: true
     dev: false
     optional: true
@@ -725,6 +732,20 @@ packages:
       tildify: 2.0.0
     dev: false
 
+  /hexo-deployer-git@4.0.0:
+    resolution: {integrity: sha512-28t1Q+4taB/UaBAP52W3mD/wcCwa2y2zBieUfBJFBZudbmVgiKJB5YedYILeyI5QByaUKAOwoupmdTbocdQ+CQ==}
+    engines: {node: '>=14'}
+    dependencies:
+      bluebird: 3.7.2
+      hexo-fs: 4.1.1
+      hexo-util: 2.7.0
+      luxon: 3.4.4
+      nunjucks: 3.2.4
+      picocolors: 1.0.0
+    transitivePeerDependencies:
+      - chokidar
+    dev: false
+
   /hexo-front-matter@4.2.1:
     resolution: {integrity: sha512-sJJI0GNmejYiwBvgnGRKn5V3sbODB4dNPr8jyw2Qp0PRHr4Uuyv8iyxw6WfK3+T7yvzYvJOh+tZ7jnwr2BYARA==}
     engines: {node: '>=14'}
@@ -761,6 +782,16 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       hexo-pagination: 3.0.0
+    dev: false
+
+  /hexo-generator-search@2.4.3:
+    resolution: {integrity: sha512-Z5hfZq2g3np/Tgdp2q9HobfIvU6Pdz89tnTurc1IIq/vW0MHgDynk0Aiv6kvMtKWthnZ5l0iEMT3YLN35NdYwQ==}
+    engines: {node: '>= 0.10.0'}
+    dependencies:
+      nunjucks: 3.2.4
+      utils-merge: 1.0.1
+    transitivePeerDependencies:
+      - chokidar
     dev: false
 
   /hexo-generator-tag@2.0.0:
@@ -876,8 +907,8 @@ packages:
       strip-indent: 3.0.0
     dev: false
 
-  /hexo@7.0.0:
-    resolution: {integrity: sha512-3iRSYReDcYd+bdCrDYS53aFjR717M+eSwKVXdM1tF2QETi8urcwDdDDoD7Nm2E0trqN4oeoHJ7FoXbn2UsZxqw==}
+  /hexo@7.1.0:
+    resolution: {integrity: sha512-FFjo8NwqSQVxASSKFGkFUak720sFC/p3IxkDIOHLXQ1axQ5w4ipFU0DNqDzwyb5EJOMFYuMxFcurhm9olQP13A==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
@@ -1152,6 +1183,11 @@ packages:
     resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
     dependencies:
       tslib: 2.6.2
+    dev: false
+
+  /luxon@3.4.4:
+    resolution: {integrity: sha512-zobTr7akeGHnv7eBOXcRgMeCP6+uyYsczwmeRCauvpvaAltgNyTbLH/+VaEAPUeWBT+1GuNmz4wC/6jtQzbbVA==}
+    engines: {node: '>=12'}
     dev: false
 
   /marked@4.3.0:
